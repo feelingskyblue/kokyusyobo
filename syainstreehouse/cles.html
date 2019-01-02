@@ -6,10 +6,10 @@
 <meta http-equiv="Content-Style-Type" content="text/css">
 <TITLE></TITLE>
 
-<style type=text/css> 
+<style type=text/css>
 <!-- body
 {
-				
+
 		scrollbar-face-color: black;
   scrollbar-highlight-color: skyblue; scrollbar-shadow-color: skyblue;
   scrollbar-3dlight-color: black; scrollbar-arrow-color: skyblue;
@@ -18,97 +18,42 @@
 
 <!--
 A{
-				
+
 		text-decoration:none;
 }
 //-->
 
-<!-- 
+<!--
 
 BODY {
-				
-		line-height: 1.2em; 
-} 
+
+		line-height: 1.2em;
+}
 
 -->
 
 </style>
 
-<SCRIPT language="JavaScript"> 
-<!-- 
-function ok(id){if(document.all(id).style.display == "none"){document.all(id).style.display="block";}else{document.all(id).style.display="none";}} 
-//--> 
-</SCRIPT><script type="text/javascript" language="JavaScript">
-<!--HPB_SCRIPT_ROV_50
-//
-//  Licensed Materials - Property of IBM
-//  5724Y82
-//  (C) Copyright IBM Corp. 1995, 2009 All Rights Reserved.
-//
-
-// HpbImgPreload:
-//
-function HpbImgPreload()
-{
-  var appVer=parseInt(navigator.appVersion);
-  var isNC=false,isN6=false,isIE=false;
-  if (document.all && appVer >= 4) isIE=true; else
-    if (document.getElementById && appVer > 4) isN6=true; else
-      if (document.layers && appVer >= 4) isNC=true;
-  if (isNC||isN6||isIE)
-  {
-    if (document.images)
-    {
-      var imgName = HpbImgPreload.arguments[0];
-      var cnt;
-      swImg[imgName] = new Array;
-      for (cnt = 1; cnt < HpbImgPreload.arguments.length; cnt++)
-      {
-        swImg[imgName][HpbImgPreload.arguments[cnt]] = new Image();
-        swImg[imgName][HpbImgPreload.arguments[cnt]].src = HpbImgPreload.arguments[cnt];
-      }
-    }
-  }
-}
-// HpbImgFind:
-//
-function HpbImgFind(doc, imgName)
-{
-  for (var i=0; i < doc.layers.length; i++)
-  {
-    var img = doc.layers[i].document.images[imgName];
-    if (!img) img = HpbImgFind(doc.layers[i], imgName);
-    if (img) return img;
-  }
-  return null;
-}
-// HpbImgSwap:
-//
-function HpbImgSwap(imgName, imgSrc)
-{
-  var appVer=parseInt(navigator.appVersion);
-  var isNC=false,isN6=false,isIE=false;
-  if (document.all && appVer >= 4) isIE=true; else
-    if (document.getElementById && appVer > 4) isN6=true; else
-      if (document.layers && appVer >= 4) isNC=true;
-  if (isNC||isN6||isIE)
-  {
-    if (document.images)
-    {
-      var img = document.images[imgName];
-      if (!img) img = HpbImgFind(document, imgName);
-      if (img) img.src = imgSrc;
-    }
-  }
-}
-var swImg; swImg=new Array;
+<SCRIPT language="JavaScript">
+<!--
+function ok(id){if(document.all(id).style.display == "none"){document.all(id).style.display="block";}else{document.all(id).style.display="none";}}
 //-->
-</script><script type="text/javascript" language="JavaScript">
+</SCRIPT>
+<script type="text/javascript" language="JavaScript">
 <!--HPB_SCRIPT_PLD_50
 HpbImgPreload('HPB_ROLLOVER1', 'IMG_000468_1.jpg', 'IMG_000270_5.jpg');
 //-->
 </script>
-
+<style>
+  .imgRoll {
+    width: 350px;
+    height: 500px;
+    background: url(/syainstreehouse/images/IMG_000468_1.jpg) no-repeat;
+  }
+  .imgRoll:hover {
+    background: url(/syainstreehouse/images/IMG_000270_5.jpg) no-repeat;
+  }
+</style>
 </HEAD>
 <BODY text="#cccccc" bgcolor="#000000" link="#cccc00" vlink="#cccc00" alink="#cccc00">
 <BLOCKQUOTE><FONT size="-1"><BR>
@@ -117,8 +62,9 @@ HpbImgPreload('HPB_ROLLOVER1', 'IMG_000468_1.jpg', 'IMG_000270_5.jpg');
 （オンマウスで旧デザインが表示されます）<BR>
 <BR>
 </FONT><BR>
-<a href="#" id="HPB_ROLLOVER1" name="HPB_ROLLOVER1" onmouseout="HpbImgSwap('HPB_ROLLOVER1', 'IMG_000468_1.jpg');" onmouseover="HpbImgSwap('HPB_ROLLOVER1', 'IMG_000270_5.jpg');"><img src="/syainstreehouse/images/IMG_000468_1.jpg" width="350" height="500" border="0" name="HPB_ROLLOVER1"></a><BR>
-<FONT size="-1" color="#cccc00"><BR><A HREF="JavaScript:ok('tree1');">→Who is he ?</A></FONT><DIV ID="tree1" style="display:none;"> 
+<div class="imgRoll"></div>
+<BR>
+<FONT size="-1" color="#cccc00"><BR><A HREF="JavaScript:ok('tree1');">→Who is he ?</A></FONT><DIV ID="tree1" style="display:none;">
 <FONT size="-1">
 <BR>
 　サイト擬人化、です。つまりこのサイト全体を一人のオリキャラとして生まれたのが彼。<BR>
@@ -160,7 +106,7 @@ HpbImgPreload('HPB_ROLLOVER1', 'IMG_000468_1.jpg', 'IMG_000270_5.jpg');
 <BR>
 <BR>
 <FONT size="-1" color="#cccc00"><A HREF="JavaScript:ok('tree4');">→裏設定とか色々</A></FONT>
-<DIV ID="tree4" style="display:none;"> 
+<DIV ID="tree4" style="display:none;">
 <FONT size="-1"><BR>
 　＊サイト空間は主に「草原と空」で構成されています。<BR>
 　　 サイト更新停止前は時間の概念が無く、常に満天の星空が見える夜でしたが、今は時間の流れがあります。<BR>
