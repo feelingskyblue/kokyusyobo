@@ -5,81 +5,23 @@
 
 <META http-equiv="Content-Style-Type" content="text/css">
 <TITLE></TITLE>
-<SCRIPT language="JavaScript">
-<!--HPB_SCRIPT_ROV_50
-//
-//  Licensed Materials - Property of IBM
-//  5724I83
-//  (C) Copyright IBM Corp. 1995, 2004 All Rights Reserved.
-//
-
-// HpbImgPreload:
-//
-function HpbImgPreload()
-{
-  var appVer=parseInt(navigator.appVersion);
-  var isNC=false,isN6=false,isIE=false;
-  if (document.all && appVer >= 4) isIE=true; else
-    if (document.getElementById && appVer > 4) isN6=true; else
-      if (document.layers && appVer >= 4) isNC=true;
-  if (isNC||isN6||isIE)
-  {
-    if (document.images)
-    {
-      var imgName = HpbImgPreload.arguments[0];
-      var cnt;
-      swImg[imgName] = new Array;
-      for (cnt = 1; cnt < HpbImgPreload.arguments.length; cnt++)
-      {
-        swImg[imgName][HpbImgPreload.arguments[cnt]] = new Image();
-        swImg[imgName][HpbImgPreload.arguments[cnt]].src = HpbImgPreload.arguments[cnt];
-      }
-    }
+<style>
+  .imgRoll {
+    width: 600px;
+    height: 450px;
+    background: url(/syainstreehouse/images/starry_night1.jpg) no-repeat;
   }
-}
-// HpbImgFind:
-//
-function HpbImgFind(doc, imgName)
-{
-  for (var i=0; i < doc.layers.length; i++)
-  {
-    var img = doc.layers[i].document.images[imgName];
-    if (!img) img = HpbImgFind(doc.layers[i], imgName);
-    if (img) return img;
+  .imgRoll:hover {
+    background: url(/syainstreehouse/images/starry_night.jpg) no-repeat;
   }
-  return null;
-}
-// HpbImgSwap:
-//
-function HpbImgSwap(imgName, imgSrc)
-{
-  var appVer=parseInt(navigator.appVersion);
-  var isNC=false,isN6=false,isIE=false;
-  if (document.all && appVer >= 4) isIE=true; else
-    if (document.getElementById && appVer > 4) isN6=true; else
-      if (document.layers && appVer >= 4) isNC=true;
-  if (isNC||isN6||isIE)
-  {
-    if (document.images)
-    {
-      var img = document.images[imgName];
-      if (!img) img = HpbImgFind(document, imgName);
-      if (img) img.src = imgSrc;
-    }
-  }
-}
-var swImg; swImg=new Array;
-//-->
-</SCRIPT><SCRIPT language="JavaScript">
-<!--HPB_SCRIPT_PLD_50
-HpbImgPreload('_HPB_ROLLOVER1', 'starry_night1.jpg', 'starry_night.jpg');
-//-->
-</SCRIPT></HEAD>
+</style>
+</HEAD>
 <BODY text="#ffffff" bgcolor="#000000" link="#ffff00" vlink="#00ffff" alink="#00ff00" style="
 " background="/syainstreehouse/images/star37.jpg">
 <CENTER><B>透水時雨さんから</B><BR>
 <BR>
-<A href="#" id="_HPB_ROLLOVER1" onmouseout="HpbImgSwap('_HPB_ROLLOVER1', 'starry_night1.jpg');" onmouseover="HpbImgSwap('_HPB_ROLLOVER1', 'starry_night.jpg');"><img src="/syainstreehouse/images/starry_night1.jpg" width="600" height="450" border="0" name="_HPB_ROLLOVER1"></A><BR>
+  <div class="imgRoll"></div>
+</A><BR>
 <BR>
 <FONT size="-1">星空の奇跡色。が一周年を迎えた際、透水時雨さんから頂きましたー！ｖＶ<BR>
 <BR>
