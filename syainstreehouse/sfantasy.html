@@ -3,16 +3,39 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Style-Type" content="text/css">
-<meta name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 14.0.4.0 for Windows">
+
 <title>Aldea　――Dreaming Grove　/　アル・ディア　夢見る世界</title>
+<style>
+  body {
+    margin: 0;
+    background: #000000;
+  }
+  .wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .contentArea {
+    width: 100%;
+    height: calc(100% - 70px);
+  }
+  .menuArea {
+    width: 100%;
+    height: 70px;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+</style>
 </head>
-<frameset rows="*,70" frameborder="NO" border="0">
-  <frame name="top" src="sfantop.html">
-  <frame name="bottom" src="sfanmenu.html">
-  <noframes>
-  <body>
-  <p>このページを表示するには、フレームをサポートしているブラウザが必要です。</p>
-  </body>
-  </noframes>
-</frameset>
+<body>
+  <div class="wrap">
+    <div class="contentArea">
+      <iframe src="sfantop.html" frameborder="0" name="contentFrame"></iframe>
+    </div>
+    <div class="menuArea">
+      <iframe src="sfanmenu.html" frameborder="0" name="bgmFrame"></iframe>
+    </div>
+  </div>
+</body>
 </html>

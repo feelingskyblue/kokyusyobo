@@ -3,17 +3,47 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Style-Type" content="text/css">
-<meta name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 14.0.4.0 for Windows">
+
 <title></title>
+<style>
+  body {
+    margin: 0;
+    background: #000000;
+  }
+  .wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .contentArea {
+    width: calc(100% - 440px);
+    height: 100%;
+  }
+  .menuAreaRight {
+    width: 220px;
+    height: 100%;
+  }
+  .menuAreaLeft {
+    width: 220px;
+    height: 100%;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+</style>
 </head>
-<frameset cols="220,*,220" frameborder="NO" border="0">
-  <frame name="left" src="smenu3.html">
-  <frame name="center" src="sworld.html">
-  <frame name="right" src="menu4.html">
-  <noframes>
-  <body>
-  <p>このページを表示するには、フレームをサポートしているブラウザが必要です。</p>
-  </body>
-  </noframes>
-</frameset>
+<body>
+  <div class="wrap">
+    <div class="menuAreaLeft">
+      <iframe src="smenu3.html" frameborder="0" name="menuFrame1"></iframe>
+    </div>
+    <div class="contentArea">
+      <iframe src="sworld.html" frameborder="0" name="contentCenterFrame"></iframe>
+    </div>
+    <div class="menuAreaRight">
+      <iframe src="menu4.html" frameborder="0" name="menuFrame2"></iframe>
+    </div>
+  </div>
+</body>
 </html>
