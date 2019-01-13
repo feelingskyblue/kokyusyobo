@@ -58,7 +58,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	align-items:center;}
-
+	
 .relative{position: relative;}
 
 /* 画面全体の幅調整 */
@@ -68,8 +68,8 @@ body {
 }
 
 .view{
+	height:700px;
 	background:url(../img/bg_craftpaper04.jpg);
-  margin-bottom: 15%;
 }
 
 .h{
@@ -461,6 +461,7 @@ font-size: 1.2em;
 }
 
 #mail{
+	height: 50%;
 	width:80%;
 	margin:0 auto;
 }
